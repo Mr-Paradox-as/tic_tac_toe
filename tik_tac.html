@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tik_tac.css">
+</head>
+<body>
+    <section>
+        <h1 class="title">Tic Tac Toe</h1>
+        <h2 class="choose">Choose your Shape</h2>
+        <p id = "cho" onclick="cross()" onclick="circle()"></p>
+        <div class="options">
+            <button id ="cross" onclick="cross()" class="option1">cross</button>
+            <button id ="circle" onclick = "circle()" class="option2">circle</button>
+        </div>
+        <div id ="mygame" class="container">
+            <div id="a"class="cell" onclick="show(id)" ></div>
+            <div id="b" class="cell" onclick="show(id)"></div>
+            <div id="c" class="cell" onclick="show(id)"></div>
+            <div id="d" class="cell" onclick="show(id)"></div>
+            <div id="e" class="cell" onclick="show(id)"></div>
+            <div id="f" class="cell" onclick="show(id)"></div>
+            <div id="g" class="cell" onclick="show(id)"></div>
+            <div id="h" class="cell" onclick="show(id)" ></div>
+            <div id="i" onclick="show(id)" class="cell" ></div>
+        </div>
+        <button type="button" class="restart" onClick="window.location.reload()">
+            Restart
+         </button>
+        <script src = "tic_tak.js"></script>
+</body>
+</html>
